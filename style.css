@@ -4313,5 +4313,10 @@ img.ui-datepicker-trigger {
 
 ul.products li.product.sale .onsale, ul.products li.product.sale .onsale:after {
 	width: 50px;
+	height: 50px;
+	padding: 0px;
+}
+ul.products li.product.sale .onsale, ul.products li.product.sale .onsale {
+	width: 50px;
 	height: 23px;
 }
