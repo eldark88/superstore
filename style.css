@@ -4299,3 +4299,19 @@ img.ui-datepicker-trigger {
 .ie input[type=email] {
   height: 3em;
 }
+
+/*Custom*/
+.post .entry,
+  .type-page .entry,
+  #comments li.comment .comment_container .comment-text,
+  .page .entry,
+  .page #contactForm,
+  #respond,
+  .type-feature .entry .custom{
+    padding: 0px;
+}
+
+ul.products li.product.sale .onsale, ul.products li.product.sale .onsale:after {
+	width: 50px;
+	height: 23px;
+}
