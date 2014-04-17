@@ -1981,3 +1981,14 @@ body:after {
     font-size: 1.6em;
   }
 }
+
+/*Custom*/
+.post .entry,
+  .type-page .entry,
+  #comments li.comment .comment_container .comment-text,
+  .page .entry,
+  .page #contactForm,
+  #respond,
+  .type-feature .entry .custom{
+    padding: 2.618em;
+  }

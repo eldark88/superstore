@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
     	<?php woo_main_before(); ?>
     	
 		<section id="main" class="col-left fix">
-				<section>
+				<section class="entry custom">
 
 		            <?php
 		            	if ( have_posts() ) { the_post();
