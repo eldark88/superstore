@@ -4319,9 +4319,12 @@ ul.products li.product.sale .onsale, ul.products li.product.sale .onsale {
 	width: 50px;
 	height: 23px;
 }
-.layout-full .woocommerce-columns-5 ul.products li.product {
+ul.products li.product {
 	min-height: 300px;
 }
-.tax-product_cat #main ul.products li.product h3 {
+ul.products li.product h3 {
 	min-height: 70px;
+}
+ul.products li.product .button {
+	width: 88%;
 }
