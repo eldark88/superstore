@@ -4334,7 +4334,7 @@ ul.products li.product .add_to_cart_button:after {
 }
 .single-product .summary .price del .amount {
 	display: block;
-	font-size: 1.618em;
+	font-size: 1.618em !important;
 }
 .single-product .summary .price ins .amount  {
 	font-weight: bold;
