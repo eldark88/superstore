@@ -171,7 +171,7 @@ jQuery(document).ready(function() {
                         <?php echo do_shortcode( '[box type="alert"]' . __( 'E-mail has not been setup properly. Please add your contact e-mail!', 'woothemes' ) . '[/box]' );  ?>
                     <?php } ?>
 
-
+					<?php if (false) { // disable contact form?>
                     <form action="<?php the_permalink(); ?>" id="contactForm" method="post">
 
                         <ol class="forms">
@@ -200,7 +200,7 @@ jQuery(document).ready(function() {
                             <li class="buttons"><input type="hidden" name="submitted" id="submitted" value="true" /><input class="submit button" type="submit" value="<?php esc_attr_e( 'Submit', 'woothemes' ); ?>" /></li>
                         </ol>
                     </form>
-
+					<?php }?>
                     <?php
                     		} // End WHILE Loop
                     	}
