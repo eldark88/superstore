@@ -4329,13 +4329,16 @@ ul.products li.product h3 {
 ul.products li.product .button {
 	width: 88%;
 }
-ul.products li.product .add_to_cart_button:after {
-	width: 1.2em !important;
-}
+
 .single-product .summary .price del .amount {
 	display: block;
 	font-size: 1.618em !important;
 }
 .single-product .summary .price ins .amount  {
 	font-weight: bold;
+}
+
+ul.products li.product {
+	width: 24.0%;
+	margin-right: 1%;
 }
