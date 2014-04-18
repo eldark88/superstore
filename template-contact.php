@@ -170,7 +170,7 @@ jQuery(document).ready(function() {
                     <?php if ( get_option( 'woo_contactform_email' ) == '' ) { ?>
                         <?php echo do_shortcode( '[box type="alert"]' . __( 'E-mail has not been setup properly. Please add your contact e-mail!', 'woothemes' ) . '[/box]' );  ?>
                     <?php } ?>
-
+					<br style="clear:both;"/>
 					<?php if (false) { // disable contact form?>
                     <form action="<?php the_permalink(); ?>" id="contactForm" method="post">
 
