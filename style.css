@@ -4308,7 +4308,7 @@ img.ui-datepicker-trigger {
   .page #contactForm,
   #respond,
   .type-feature .entry .custom{
-    padding: 0px;
+    padding: 0px !important;
 }
 
 ul.products li.product.sale .onsale, ul.products li.product.sale .onsale:after {

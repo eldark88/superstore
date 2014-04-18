@@ -36,7 +36,7 @@ if ( ! function_exists( 'woo_load_woocommerce_css' ) ) {
 remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5 );
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10 );
 
-add_action( 'woocommerce_after_shop_loop_item', 'superstore_product_rating_overview', 9 );
+//add_action( 'woocommerce_after_shop_loop_item', 'superstore_product_rating_overview', 9 );
 add_action( 'woocommerce_single_product_summary', 'superstore_single_product_rating_overview', 32 );
 
 if ( ! function_exists( 'superstore_product_rating_overview' ) ) {
