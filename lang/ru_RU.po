@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Superstore v1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2014-04-17 23:35-0600\n"
+"PO-Revision-Date: 2014-04-17 23:41-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -3398,7 +3398,7 @@ msgstr "Выйти"
 # @ woothemes
 #: includes/theme-woocommerce.php:506
 msgid "View your shopping cart"
-msgstr ""
+msgstr "Открыть Корзину"
 
 # @ woothemes
 #: includes/widgets/widget-woo-adspace.php:12
