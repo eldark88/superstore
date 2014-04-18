@@ -405,18 +405,18 @@ function superstore_user() {
 				<?php } ?>
 
 				<?php if ( ! is_user_logged_in() && wc_get_page_id( 'myaccount' ) !== -1 && get_option('woocommerce_enable_myaccount_registration')=='yes' ) { ?>
-					<li class="register"><a href="<?php echo $url_myaccount; ?>" class="tiptip" title="<?php _e( 'Register', 'woothemes' ); ?>"><span><?php _e( 'Register', 'woocommerce' ); ?></span></a></li>
+					<li class="register"><a href="<?php echo $url_myaccount; ?>" class="tiptip" title="<?php _e( 'Register', 'woothemes' ); ?>"><span><?php _e( 'Register', 'woothemes' ); ?></span></a></li>
 				<?php } ?>
 
 				<?php if ( is_user_logged_in() ) { ?>
 
 					<?php if ( wc_get_page_id( 'myaccount' ) !== -1 ) { ?>
-						<li class="edit-address"><a href="<?php echo $url_editaddress; ?>" class="tiptip" title="<?php _e( 'Edit Address', 'woothemes' ); ?>"><span><?php _e( 'Edit Address', 'woocommerce' ); ?></span></a></li>
+						<li class="edit-address"><a href="<?php echo $url_editaddress; ?>" class="tiptip" title="<?php _e( 'Edit Address', 'woothemes' ); ?>"><span><?php _e( 'Edit Address', 'woothemes' ); ?></span></a></li>
 					<?php } ?>
 
-					<li class="edit-password"><a href="<?php echo $url_changepass; ?>" class="tiptip" title="<?php _e( 'Change Password', 'woothemes' ); ?>"><span><?php _e( 'Change Password', 'woocommerce' ); ?></span></a></li>
+					<li class="edit-password"><a href="<?php echo $url_changepass; ?>" class="tiptip" title="<?php _e( 'Change Password', 'woothemes' ); ?>"><span><?php _e( 'Change Password', 'woothemes' ); ?></span></a></li>
 
-					<li class="logout"><a href="<?php echo wp_logout_url( $_SERVER['REQUEST_URI'] ); ?>" class="tiptip" title="<?php _e( 'Logout', 'woothemes' ); ?>"><span><?php _e( 'Logout', 'woocommerce' ); ?></span></a></li>
+					<li class="logout"><a href="<?php echo wp_logout_url( $_SERVER['REQUEST_URI'] ); ?>" class="tiptip" title="<?php _e( 'Logout', 'woothemes' ); ?>"><span><?php _e( 'Logout', 'woothemes' ); ?></span></a></li>
 
 				<?php } ?>
 			</ul>
