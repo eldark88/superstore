@@ -4332,6 +4332,10 @@ ul.products li.product .button {
 ul.products li.product .add_to_cart_button:after {
 	width: 1.2em !important;
 }
-del, del .amount {
+.single-product .summary .price del .amount {
 	display: block;
+	font-size: 1.618em;
+}
+.single-product .summary .price ins .amount  {
+	font-weight: bold;
 }
