@@ -4330,5 +4330,5 @@ ul.products li.product .button {
 	width: 88%;
 }
 ul.products li.product .add_to_cart_button:after {
-	width: 1.2em;
+	width: 1.2em !important;
 }
