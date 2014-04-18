@@ -4339,6 +4339,6 @@ ul.products li.product .button {
 }
 
 ul.products li.product {
-	width: 24.0%;
-	margin-right: 1%;
+	width: 24.0% !important;
+	margin-right: 1% !important;
 }
