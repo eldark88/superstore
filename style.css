@@ -4318,6 +4318,7 @@ ul.products li.product.sale .onsale, ul.products li.product.sale .onsale:after {
 ul.products li.product.sale .onsale, ul.products li.product.sale .onsale {
 	width: 50px;
 	height: 23px;
+	font-size: 12px !important;
 }
 ul.products li.product {
 	min-height: 300px;
@@ -4327,4 +4328,7 @@ ul.products li.product h3 {
 }
 ul.products li.product .button {
 	width: 88%;
+}
+ul.products li.product .add_to_cart_button:after {
+	width: 1.2em;
 }
