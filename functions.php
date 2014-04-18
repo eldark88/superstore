@@ -34,22 +34,15 @@ foreach ( $includes as $i ) {
 /* You can add custom functions below */
 /*-----------------------------------------------------------------------------------*/
 
-
-add_filter( 'add_to_cart_text', 'woo_custom_cart_button_text' );                                
-add_filter( 'woocommerce_product_single_add_to_cart_text', 'woo_custom_cart_button_text' );    
- 
-function woo_custom_cart_button_text() {
-	return __( 'Add to cart', 'woocommerce' );
+add_filter( 'add_to_cart_text', 'woo_custom_cart_button_text' );
+//For Single Product Page.
+add_filter( 'woocommerce_product_single_add_to_cart_text', 'woo_custom_cart_button_text' );
+//For Archives Product Page.
+add_filter( 'woocommerce_product_add_to_cart_text', 'woo_custom_cart_button_text' );
+function woo_custom_cart_button_text()
+{
+    return __( 'Add to cart', 'woocommerce' );
 }
-
-add_filter( 'add_to_cart_text', 'woo_custom_cart_button_text' );                        
-add_filter( 'woocommerce_product_add_to_cart_text', 'woo_custom_cart_button_text' );    
- 
-function woo_custom_cart_button_text() {
-	return __( 'Add to cart', 'woocommerce' );
-}
-
-
 
 
 
