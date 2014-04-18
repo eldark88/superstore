@@ -4332,3 +4332,6 @@ ul.products li.product .button {
 ul.products li.product .add_to_cart_button:after {
 	width: 1.2em !important;
 }
+del, del .amount {
+	display: block;
+}
