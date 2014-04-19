@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 	<?php woo_sidebar_inside_before(); ?>
 
-	<?php if ( woo_active_sidebar( 'primary' ) ) { ?>
+	<?php if ( woo_active_sidebar( 'primary-category' ) ) { ?>
     <div class="primary">
 		<?php woo_sidebar( 'primary-category' ); ?>		           
 	</div>        

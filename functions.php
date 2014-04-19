@@ -44,6 +44,8 @@ function woo_custom_cart_button_text()
     return __( 'Add to cart', 'woocommerce' );
 }
 
+register_sidebar( array( 'name' => __( 'Primary Category Page', 'woothemes' ), 'id' => 'primary-category', 'description' => __( 'Optional widgetized category page (displays only if widgets are added here).', 'woothemes' ), 'before_widget' => '<div id="%1$s" class="widget %2$s">', 'after_widget' => '</div>', 'before_title' => '<h1>', 'after_title' => '</h1>' ) );
+
 
 
 /*-----------------------------------------------------------------------------------*/
