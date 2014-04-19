@@ -1,50 +1,14 @@
 <?php
-if ( ! defined( 'ABSPATH' ) ) exit;
 /**
- * Template Name: Shop
+ * The Template for displaying products in a product category. Simply includes the archive template.
  *
- * The image gallery page template displays a styled
- * image grid of a maximum of 60 posts with images attached.
+ * Override this template by copying it to yourtheme/woocommerce/taxonomy-product_cat.php
  *
- * @package WooFramework
- * @subpackage Template
+ * @author 		WooThemes
+ * @package 	WooCommerce/Templates
+ * @version     1.6.4
  */
- 
- global $woo_options;
- get_header();
-?>
-       
-    <div id="content" class="page col-full">
-    
-    	<?php woo_main_before(); ?>
-    	
-		<section id="main" class="col-left fix">
-				<section class="entry custom">
 
-		            <?php
-		            	if ( have_posts() ) { the_post();
-		            		the_content();
-		            	}
-		            ?>
-               		<?php query_posts( 'showposts=60&post_type=post' ); ?>
-                	<?php
-                		if ( have_posts() ) {
-                			while ( have_posts() ) { the_post();
-                			$wp_query->is_home = false;
-                				woo_image( 'single=true&class=thumbnail alignleft' );
-                			}
-                		}
-                	?>	
-                </section>
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-            </article><!-- /.post -->                
-                                                            
-		</section><!-- /#main -->
-		
-		<?php woo_main_after(); ?>
-		
-        <?php get_sidebar('category'); ?>
-
-    </div><!-- /#content -->
-		
-<?php get_footer(); ?>
+wc_get_template( 'archive-product.php' );
