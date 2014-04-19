@@ -544,6 +544,11 @@ if ( ! function_exists( 'woocommerce_get_sidebar' ) ) {
 			if ( isset( $woo_options['woocommerce_archives_fullwidth'] ) && 'false' == $woo_options['woocommerce_archives_fullwidth'] ) {
 				get_sidebar('shop');
 			}
+			
+			// custom
+			if (is_product_category()) {
+				get_sidebar('shop');
+			}
 		}
 
 		// Display the sidebar on product details page if the full width option is not enabled.
@@ -607,7 +612,7 @@ if ( ! function_exists( 'wooframework_layout_body_class' ) ) {
 		}
 
 		// Add layout-full class if full width option is enabled
-		if ( isset( $woo_options['woocommerce_archives_fullwidth'] ) && 'true' == $woo_options['woocommerce_archives_fullwidth'] && ( is_shop() || is_post_type_archive( 'product' ) || is_tax( get_object_taxonomies( 'product' ) ) ) ) {
+		if ( isset( $woo_options['woocommerce_archives_fullwidth'] ) && 'true' == $woo_options['woocommerce_archives_fullwidth'] && ( is_shop() /*|| is_post_type_archive( 'product' ) || is_tax( get_object_taxonomies( 'product' ) )*/ ) ) {
 			$layout = 'layout-full';
 		}
 		if ( ( $woo_options[ 'woocommerce_products_fullwidth' ] == "true" && is_product() ) && ( $single_layout != 'layout-left-content' && $single_layout != 'layout-right-content' ) ) {
