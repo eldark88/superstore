@@ -10,7 +10,41 @@ if ( ! defined( 'ABSPATH' ) ) exit;
  * @subpackage Template
  */
  
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
-
-wc_get_template( 'archive-product.php' );
+ global $woo_options;
+ get_header();
 ?>
+       
+    <div id="content" class="page col-full">
+    
+    	<?php woo_main_before(); ?>
+    	
+		<section id="main" class="col-left fix">
+				<section class="entry custom">
+
+		            <?php
+		            	if ( have_posts() ) { the_post();
+		            		the_content();
+		            	}
+		            ?>
+               		<?php query_posts( 'showposts=60&post_type=post' ); ?>
+                	<?php
+                		if ( have_posts() ) {
+                			while ( have_posts() ) { the_post();
+                			$wp_query->is_home = false;
+                				woo_image( 'single=true&class=thumbnail alignleft' );
+                			}
+                		}
+                	?>	
+                </section>
+
+            </article><!-- /.post -->                
+                                                            
+		</section><!-- /#main -->
+		
+		<?php woo_main_after(); ?>
+		
+        <?php get_sidebar('category'); ?>
+
+    </div><!-- /#content -->
+		
+<?php get_footer(); ?>
