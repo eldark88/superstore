@@ -4337,8 +4337,9 @@ ul.products li.product .button {
 .single-product .summary .price ins .amount  {
 	font-weight: bold;
 }
-
+/*
 ul.products li.product {
 	width: 24.0% !important;
-	margin-right: 1% !important;
+	margin-right: 1%;
 }
+*/
