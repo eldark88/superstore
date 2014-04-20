@@ -17,8 +17,14 @@ class Woo_Product_Categories extends WP_Widget {
 		extract( $instance, EXTR_SKIP );
 		global $woocommerce_loop;
 
+	    	/* Our variables from the widget settings. */
+			$title = apply_filters( 'widget_title', $instance['title'], $instance, $this->id_base );
+
 			echo $before_widget;
 
+			/* Display the widget title if one was input (before and after defined by themes). */
+			if ( $title ) { echo $before_title . $title . $after_title; }
+			
 	    		echo do_shortcode( '[product_categories parent="0" number="' . apply_filters( 'categories_per_page', $categories_per_page, $instance, $this->id_base ) . '"]' );
 
 			echo $after_widget;
@@ -55,6 +61,10 @@ class Woo_Product_Categories extends WP_Widget {
 		$instance = $this->woo_enforce_defaults( $instance );
 		extract( $instance, EXTR_SKIP );
 ?>
+		<p>
+			<label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title (optional):','woothemes'); ?></label>
+			<input type="text" name="<?php echo $this->get_field_name('title'); ?>" value="<?php echo esc_attr( $title ); ?>" class="widefat" id="<?php echo $this->get_field_id('title'); ?>" />
+		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id('categories_per_page'); ?>"><?php _e('Number of product categories to display:','woothemes'); ?></label>
 			<input type="number" name="<?php echo $this->get_field_name('categories_per_page'); ?>" value="<?php echo esc_attr( $categories_per_page ); ?>" size="3" style="width:40px;" id="<?php echo $this->get_field_id('categories_per_page'); ?>" />
