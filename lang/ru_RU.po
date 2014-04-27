@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Superstore v1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2014-04-17 23:42-0600\n"
+"PO-Revision-Date: 2014-04-27 16:22-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,7 @@ msgstr ""
 # @ woothemes
 #: 404.php:16
 msgid "Error 404 - Page not found!"
-msgstr ""
+msgstr "Ошибка 404 - Страница не найдена"
 
 # @ woothemes
 #: 404.php:19
@@ -30,11 +30,13 @@ msgid ""
 "The page you trying to reach does not exist, or has been moved. Please use "
 "the menus or the search box to find what you are looking for."
 msgstr ""
+"Страница, которую вы пытаетесь достичь не существует, или была перемещена. "
+"Пожалуйста, используйте меню или окно поиска, чтобы найти то, что вы ищете."
 
 # @ woothemes
 #: archive.php:16 archive.php:22 archive.php:27 archive.php:32
 msgid "Archive"
-msgstr ""
+msgstr "Архив"
 
 # @ woothemes
 #: archive.php:17
@@ -66,22 +68,22 @@ msgstr ""
 # @ woothemes
 #: comments.php:32
 msgid "No Responses"
-msgstr ""
+msgstr "Нет ответов"
 
 # @ woothemes
 #: comments.php:32
 msgid "One Response"
-msgstr ""
+msgstr "Один ответ"
 
 # @ woothemes
 #: comments.php:32
 msgid "% Responses"
-msgstr ""
+msgstr "% Ответ"
 
 # @ woothemes
 #: comments.php:32
 msgid "to"
-msgstr ""
+msgstr "к"
 
 # @ woothemes
 #: comments.php:48
@@ -91,19 +93,19 @@ msgstr ""
 # @ woothemes
 #: comments.php:65
 msgid "No comments yet."
-msgstr ""
+msgstr "Комментариев пока нет"
 
 # @ woothemes
 #: content-page.php:39 content-page.php:43 content-search.php:22
 #: content-search.php:35 content-search.php:38 content.php:39 content.php:43
 #: content.php:46
 msgid "Continue Reading &rarr;"
-msgstr ""
+msgstr "Продолжить чтение &rarr;"
 
 # @ woothemes
 #: footer.php:61
 msgid "All Rights Reserved."
-msgstr ""
+msgstr "Все права защищены."
 
 # @ woothemes
 #: footer.php:69
@@ -723,12 +725,12 @@ msgstr ""
 #: functions/admin-functions.php:2330
 #, php-format
 msgid "Search results for &quot;%1$s&quot;"
-msgstr ""
+msgstr "Результаты поиска для &quot;%1$s&quot;"
 
 # @ woothemes
 #: functions/admin-functions.php:2334
 msgid "404 Not Found"
-msgstr ""
+msgstr "404 страница не найдена"
 
 # @ woothemes
 #: functions/admin-functions.php:2570
@@ -3368,7 +3370,7 @@ msgstr ""
 # @ woothemes
 #: includes/theme-woocommerce.php:349 includes/theme-woocommerce.php:357
 msgid "Log In"
-msgstr ""
+msgstr "Войти"
 
 # @ woothemes
 #: includes/theme-woocommerce.php:357

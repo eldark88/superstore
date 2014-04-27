@@ -2186,9 +2186,6 @@ function woo_breadcrumbs( $args = array() ) {
 			if ( !empty( $post_type_object->has_archive ) && function_exists( 'get_post_type_archive_link' ) ) {
 				//Custom
 				$name = $post_type_object->labels->name;
-				if ($name=='Товары') {
-					$name = 'Каталог Товаров';
-				}
 				$trail[] = '<a href="' . get_post_type_archive_link( $post_type ) . '" title="' . esc_attr( $name ) . '">' . $name . '</a>';
 			}
 		}
