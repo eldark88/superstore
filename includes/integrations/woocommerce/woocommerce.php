@@ -134,7 +134,8 @@ add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loo
  * Product Categories
  * Display product categories in the loop
  */
-add_action( 'woocommerce_after_shop_loop_item', 'superstore_product_loop_categories', 2 );
+
+//add_action( 'woocommerce_after_shop_loop_item', 'superstore_product_loop_categories', 2 );
 if (!function_exists('superstore_product_loop_categories')) {
 	function superstore_product_loop_categories() {
 		global $post;
